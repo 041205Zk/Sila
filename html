@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sıla Göktaş 🌟 Mini Dev Paneli</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px #fff;
+            animation: bounce 2s infinite;
+        }
+
+        .name-tag {
+            background: #fff;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        .height-display {
+            font-size: 6em;
+            background: white;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            animation: pulse 1.5s infinite;
+        }
+
+        .comparison {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .goktas-animation {
+            font-size: 4em;
+            animation: rotate 3s infinite;
+        }
+
+        .fact-box {
+            background: #fff;
+            padding: 15px;
+            margin: 20px;
+            border-left: 5px solid #ff7675;
+            text-align: left;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        button {
+            background: #ffeaa7;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Soyisim Animasyonu -->
+        <div class="goktas-animation">
+            🌠 GÖKTAŞ 🌠
+        </div>
+
+        <!-- İsim Etiketi -->
+        <div class="name-tag">
+            <h1>Resmi Kimlik Bilgileri</h1>
+            <h2>📛 İsim: Sıla<br>🌌 Soyisim: Mini Göktaş</h2>
+        </div>
+
+        <!-- Boy Gösterimi -->
+        <div class="height-display">
+            158cm
+        </div>
+
+        <!-- Karşılaştırmalar -->
+        <div class="comparison">
+            <h2>📐 Boy Karşılaştırmaları</h2>
+            <p>🍌 10.5 Muz Boyu<br>🐧 1.5 Penguen Boyu<br>📏 0.9 Kapı Tokmağı</p>
+        </div>
+
+        <!-- Eğlenceli Bilgiler -->
+        <div class="fact-box">
+            <h3>🌟 Göktaş Ailesi Gerçeği:</h3>
+            <p>"Göktaş soyismi, atalarının meteorlarla dans ettiği efsanesinden gelir!"</p>
+        </div>
+
+        <!-- Etkileşimli Buton -->
+        <button onclick="alert('Sıla: Göktaş gibi parlamaya devam! 💫')">
+            Göktaş Gücünü Göster!
+        </button>
+    </div>
+</body>
+</html>
